@@ -1,7 +1,7 @@
 <h3 style="text-decoration:underline;color:red">
   {{proizvod.name}} - details
 </h3>
-<br>
+<button (click)="addToCart(proizvod)">Buy</button>
 <hr>
 <div *ngIf="proizvod">
   <h3>Name: <span class="live-data">{{proizvod.name}}</span></h3>

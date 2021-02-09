@@ -1,0 +1,6 @@
+<h2>Shippings</h2>
+<hr>
+<div *ngFor="let shipping of shippings | async">
+  <h2>{{shipping.type}}</h2>
+  <h3>{{shipping.price | currency}}</h3>
+</div>

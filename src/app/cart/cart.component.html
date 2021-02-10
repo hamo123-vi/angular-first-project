@@ -5,3 +5,18 @@
   <h2>{{item.price | currency}}</h2>
   <hr>
 </div>
+<form *ngIf="items.length>0" [formGroup]="cartForm" (ngSubmit)="submit()">
+  <div>
+    <label for="name">Name:</label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+  <div>
+    <label for="surname">Surname:</label>
+    <input id="surname" type="text" formControlName="surname">
+  </div>
+  <div>
+    <label for="address">Address:</label>
+    <input id="address" type="text" formControlName="address">
+  </div>
+  <button type="submit">Finish order</button>
+  
